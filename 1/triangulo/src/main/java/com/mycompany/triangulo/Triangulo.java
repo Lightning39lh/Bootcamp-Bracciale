@@ -43,6 +43,11 @@ public class Triangulo {
             return "Triangulo Escaleno";
 	}
 }
+    //excercise 1
+    public int PerimetroTriangulo(){
+        return lado1+lado2+lado3;
+    }
+    
 }
     
 

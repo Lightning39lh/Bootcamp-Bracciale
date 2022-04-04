@@ -6,30 +6,41 @@ public class Ejprimos {
     public static void main(String[] args) {
         
     }
-    public static boolean EsPrimoIf(int i) {
-    if (i == 1) {
-        return true;
-            } else if (i==2) {
-                return true;
-            } else if (i==3) {
-                return true;
-            } else if (i==5){
-                return true;
-            } else if (i==7){
-                return true;
-            } else if (i==7){
-                return true;
-            } else if (i==11){
-                return true;
-            } else if (i==13){
-                return true;
-            } else {
+
+    public static boolean isPrimeIf()
+    {
+
+        Scanner scan = new Scanner(System.in);
+        int number;
+
+        do 
+        { // do while because i need to check that is a number between 1 and 14
+
+        System.out.println(" \n Enter a number beetwen 1 and 14: ");
+        number = scan.nextInt();
+
+        if(number >14  number < 1)
+            System.out.println("that number doesn't respect the conditions ");
+
+        }while (number >14  number < 1);
+
+        if (number == 1) //this number isn't prime, but it's  only divisible between 1 and themself
+         {
                 return false;
-            }    
+         }
+         for(int i = 2; i<number; i++) 
+         {
+             if(number%i == 0) //here I look if they are divisible by a number between 2 and the number
+             {
+                 return false;
+             }
+         }
+
+        return true;
+    }
 }
     public static boolean EsPrimoSwitch(int i){
-        switch (i) {
-            case 1: return true; //no hace falta el break xq sale de la funcion por el return
+        switch (i) { //no hace falta el break xq sale de la funcion por el return
             case 2: return true;
             case 3: return true;
             case 5: return true;
@@ -38,10 +49,6 @@ public class Ejprimos {
             case 13: return true;
             default:
                 return false;
-            
-            
         }
     }
-    
-    
 }

@@ -8,6 +8,7 @@ package com.mycompany.triangulo;
 public class EjTriangulo {
 
     public static void main(String[] args) {
-       
+      
+       System.out.println("es un: ");
     }
 }
