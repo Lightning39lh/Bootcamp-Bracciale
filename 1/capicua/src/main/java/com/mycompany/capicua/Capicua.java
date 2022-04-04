@@ -1,17 +1,36 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
- */
+
 
 package com.mycompany.capicua;
 
-/**
- *
- * @author M_Her
- */
+import java.util.Scanner;
+
 public class Capicua {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        
+        String cadena;
+        Scanner sc;
+        Boolean esCapicua=true;
+        int aux=0;
+        System.out.println("ingrese numero");
+        sc = new Scanner (System.in);
+        cadena= sc.nextLine();
+        int [] numeros=new int[cadena.length()];
+        for(int i=numeros.length-1;i>=0;i--){
+        numeros[i]=Character.getNumericValue(cadena.charAt(i));
+        }
+        for(int i=(numeros.length-1);i>=0;i--){
+            if (numeros[i] != numeros[aux])
+            {
+             esCapicua=false;   
+            }
+                    aux++;
+        }
+        if (esCapicua) {
+            System.out.println("es capicua");
+        } else {
+            System.out.println("no es capicua");
+        }
+            
     }
 }
