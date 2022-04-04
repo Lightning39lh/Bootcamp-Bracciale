@@ -1,6 +1,8 @@
 
 package com.mycompany.ejprimos;
 
+import java.util.Scanner;
+
 public class Ejprimos {
 
     public static void main(String[] args) {
@@ -19,10 +21,10 @@ public class Ejprimos {
         System.out.println(" \n Enter a number beetwen 1 and 14: ");
         number = scan.nextInt();
 
-        if(number >14  number < 1)
+        if(number >14 &&  number < 1)
             System.out.println("that number doesn't respect the conditions ");
 
-        }while (number >14  number < 1);
+        }while (number >14 && number < 1);
 
         if (number == 1) //this number isn't prime, but it's  only divisible between 1 and themself
          {
@@ -38,7 +40,7 @@ public class Ejprimos {
 
         return true;
     }
-}
+    
     public static boolean EsPrimoSwitch(int i){
         switch (i) { //no hace falta el break xq sale de la funcion por el return
             case 2: return true;

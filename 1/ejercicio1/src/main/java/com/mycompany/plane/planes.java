@@ -4,10 +4,7 @@
  */
 package com.mycompany.plane;
 
-/**
- *
- * @author M_Her
- */
+
 public class planes {
     
 }
