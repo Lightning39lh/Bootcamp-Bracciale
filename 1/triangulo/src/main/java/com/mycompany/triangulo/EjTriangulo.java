@@ -8,8 +8,6 @@ package com.mycompany.triangulo;
 public class EjTriangulo {
 
     public static void main(String[] args) {
-        
-        
-        
        
+    }
 }
