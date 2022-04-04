@@ -34,7 +34,7 @@ public class Triangulo {
         this.lado3 = lado3;
     }
     
-    public static String TipoDeTriangulo(int lado1,int lado2,int lado3) {
+    public String TipoDeTriangulo() {
         if(lado1==lado2 && lado1==lado3){
             return "Triangulo Equilatero";
 	}else if ((lado1==lado2) || (lado1==lado3) || (lado2==lado3)) {
