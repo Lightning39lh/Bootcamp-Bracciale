@@ -1,5 +1,6 @@
 package com.mycompany.arreglo10;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 /*
@@ -89,6 +90,7 @@ public class Arreglo10 {
                 }
             }
         }
+        //Arrays.sort(array10);
         return array10;
         
     }
