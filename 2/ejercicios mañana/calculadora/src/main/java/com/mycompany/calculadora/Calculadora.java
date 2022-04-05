@@ -44,10 +44,13 @@ public class Calculadora {
                 System.out.println("the result is: "+division(num1,num2));
                 break;
             }
-            default:  {
-                option = 'E';
-                        
-                System.out.println("thanks for using the calculator\n");}
+            case 'E': {
+                System.out.println("thanks for using the calculator\n");
+                break;
+            }
+            
+            default:  {                       
+                System.out.println("incorrect character, try again\n");}
              } 
         }while (option != 'E');
     }
