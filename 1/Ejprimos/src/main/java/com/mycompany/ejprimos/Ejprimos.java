@@ -42,7 +42,7 @@ public class Ejprimos {
     }
     
     public static boolean EsPrimoSwitch(int i){
-        switch (i) { //no hace falta el break xq sale de la funcion por el return
+        switch (i) { 
             case 2:
             case 3:
             case 5: 
