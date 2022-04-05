@@ -8,6 +8,19 @@ public class Plane implements Vehiculo  {
     private int capacity;
     private int passengers = 0;
     private int fuel = 0;
+    private boolean motor = false;
+    private int fuelCost = 600; //per km
+    
+
+    public int getFuelCost() {
+        return fuelCost;
+    }
+
+    public void setFuelCost(int fuelCost) {
+        this.fuelCost = fuelCost;
+    }
+    
+    
 
     public Plane(String model, int capacity)
     {
@@ -39,7 +52,10 @@ public class Plane implements Vehiculo  {
 
     //methods
     public void launch() {
+        if (this.motor){
         flying =true;
+        }
+        
     }
     public void land() {
         flying =false;
@@ -64,4 +80,21 @@ public class Plane implements Vehiculo  {
     public void fueling(int num) {
         this.fuel+=num;
     }
+
+    @Override
+    public void on() {
+        this.motor=true;
+    }
+    
+    @Override
+    public void off() {
+        this.motor=false;
+    }
+
+    @Override
+    public int costTravel(int km, int fuel) {
+        this.fuel-=fuel;
+        return km*fuelCost; 
+    }
+    
 }

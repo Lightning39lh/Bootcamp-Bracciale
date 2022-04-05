@@ -11,6 +11,26 @@ public class Auto implements Vehiculo{
 
     private String model;
     private int fuel = 0;
+    private boolean motor=false;
+    private int fuelCost = 300; //per km
+
+    public boolean isMotor() {
+        return motor;
+    }
+
+    public void setMotor(boolean motor) {
+        this.motor = motor;
+    }
+
+    public int getFuelCost() {
+        return fuelCost;
+    }
+
+    public void setFuelCost(int fuelCost) {
+        this.fuelCost = fuelCost;
+    }
+    
+    
     
     public String getModel() {
         return model;
@@ -31,6 +51,22 @@ public class Auto implements Vehiculo{
     @Override
     public void fueling(int num) {
         this.fuel+=num;
+    }
+
+    @Override
+    public void on() {
+        this.motor = true;
+    }
+
+    @Override
+    public void off() {
+       this.motor = false; 
+    }
+
+    @Override
+    public int costTravel(int km, int fuel) {
+        this.fuel-=fuel;
+        return km*fuelCost;
     }
     
 }
