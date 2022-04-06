@@ -14,19 +14,19 @@ public class MatrizPaises {
         String [][] cityNames = new String [5][3];
         Scanner sc = new Scanner(System.in);
         for (int i =0; i<5;i++){
-            System.out.println("ingrese el pais "+(i+1));
+            System.out.println("enter the country "+(i+1));
             countryNames[i]= sc.nextLine();
         }
         
         for (int i =0; i<5;i++){
             for (int j=0;j<3;j++){
-                System.out.println("ingrese la ciudad "+(j+1)+" del pais "+countryNames[i]);
+                System.out.println("enter the city "+(j+1)+" of the country "+countryNames[i]);
             cityNames[i][j]= sc.nextLine();
             }
         }
         
         for (int i =0; i<5;i++){
-             System.out.println("las ciudades del pais "+countryNames[i]+" son: ");
+             System.out.println("the city in the country "+countryNames[i]+" are: ");
             for (int j=0;j<3;j++){
                System.out.println(cityNames[i][j]);
             }
