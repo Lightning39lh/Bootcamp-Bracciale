@@ -15,9 +15,8 @@ public class Fisica {
         var t =0;
         var xf =0;
         var vf =0;
-        var despPromedio =0;
-        
-        
+        var despPromedio=0.0;
+
         Scanner sc = new Scanner(System.in);
         System.out.println("ingrese la aceleracion inicial");
         a0= sc.nextInt();
