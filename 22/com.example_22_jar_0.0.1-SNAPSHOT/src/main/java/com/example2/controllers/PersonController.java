@@ -38,7 +38,6 @@ public class PersonController {
         Person person = new Person();
         model.addAttribute("person", person);
         return "PersonCreate";
-    
     }
 
     @PostMapping("/create")
